@@ -6,7 +6,7 @@ The system periodically checks whether the plant needs watering based on a prede
 The system uses:
 - **Humidity Sensor** - measures soil moisture through its conductivity and sends data to the Arduino
 - **Relay Module** - acts as a switch to control the water pump
-- **Water Pump** - supplies wather when needed
+- **Water Pump** - supplies water when needed
 - **NTP (Network Time Protocol)** - provides the exact real-time clock and ensures accurate scheduling of moisture checks.
 If the soil moisture falls below 20%, the relay activates the water pump. The pump runs for 2 seconds before stopping to allow the sensor to reassess the moisture level. If necessary, the cycle repeats until the desired moisture is achieved. Users can also manually trigger watering via an IoT switch in the application.
 ## Circuit Diagram
